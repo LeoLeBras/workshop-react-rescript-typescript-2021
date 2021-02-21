@@ -49,7 +49,6 @@ const App: React.FC<{ initialState: State }> = (props) => {
         <input
           type="text"
           value={inputValue}
-          defaultValue={inputValue}
           onChange={(event) => setInputValue(event.target.value)}
         />
         <button
