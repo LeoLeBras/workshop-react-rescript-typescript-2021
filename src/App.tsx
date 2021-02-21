@@ -1,4 +1,4 @@
-import { Reducer, useReducer, useState } from 'react'
+import React from 'react'
 
 type State = { todos: { name: string; completed: boolean }[] }
 
@@ -12,9 +12,9 @@ const removeTodo = (name: string): RemoveTodo => ({ type: REMOVE_TODO, payload: 
 
 type Action = AddTodo | RemoveTodo
 
-const intiailState: State = { todos: [] }
+export const intiailState: State = { todos: [] }
 
-const reducer: Reducer<State, Action> = (state: State, action: Action): State => {
+const reducer = (state: State, action: Action): State => {
   switch (action.type) {
     case ADD_TODO: {
       const { name } = action.payload
@@ -30,9 +30,12 @@ const reducer: Reducer<State, Action> = (state: State, action: Action): State =>
   }
 }
 
-const App = () => {
-  const [state, dispatch] = useReducer<Reducer<State, Action>>(reducer, intiailState)
-  const [inputValue, setInputValue] = useState<string>(() => '')
+const App: React.FC<{ initialState: State }> = (props) => {
+  const [state, dispatch] = React.useReducer<React.Reducer<State, Action>>(
+    reducer,
+    props.initialState,
+  )
+  const [inputValue, setInputValue] = React.useState<string>(() => '')
 
   return (
     <div className="App">
