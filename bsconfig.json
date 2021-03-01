@@ -21,7 +21,7 @@
   "bsc-flags": ["-open Belt"],
   "refmt": 3,
   "gentypeconfig": {
-    "language": "typescript",
+    "language": "untyped",
     "shims": {},
     "debug": {
       "all": false,
