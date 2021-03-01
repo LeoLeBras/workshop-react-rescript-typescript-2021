@@ -1,8 +1,9 @@
 {
-  "name": "react-typescript",
+  "name": "react-rescript",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@rescript/react": "^0.10.1",
     "@testing-library/jest-dom": "^5.11.4",
     "@testing-library/react": "^11.1.0",
     "@testing-library/user-event": "^12.1.10",
@@ -10,6 +11,8 @@
     "@types/node": "^12.0.0",
     "@types/react": "^17.0.0",
     "@types/react-dom": "^17.0.0",
+    "bs-platform": "^9.0.1",
+    "gentype": "^3.44.0",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "react-scripts": "4.0.2",
@@ -17,15 +20,25 @@
     "web-vitals": "^1.0.1"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "react:start": "react-scripts start",
+    "react:build": "react-scripts build",
+    "react:test": "react-scripts test",
+    "react:eject": "react-scripts eject",
+    "rescript:start": "bsb -make-world -w",
+    "rescript:build": "bsb -make-world"
   },
   "eslintConfig": {
     "extends": [
       "react-app",
       "react-app/jest"
+    ],
+    "overrides": [
+      {
+        "files": ["**/*.js?(x)"],
+        "rules": {
+          "strict": "off"
+        }
+      }
     ]
   },
   "browserslist": {

@@ -1,7 +1,7 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 import './index.css'
-import App from './App'
+import { make as App } from './App.gen'
 import reportWebVitals from './reportWebVitals'
 
 ReactDOM.render(

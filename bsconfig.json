@@ -1,0 +1,31 @@
+{
+  "name": "react-rescript",
+  "reason": {
+    "react-jsx": 3
+  },
+  "sources": [
+    {
+      "dir": "src",
+      "subdirs": true
+    }
+  ],
+  "package-specs": [
+    {
+      "module": "commonjs",
+      "in-source": true
+    }
+  ],
+  "suffix": ".bs.js",
+  "bs-dependencies": ["@rescript/react"],
+  "bs-dev-dependencies": [],
+  "bsc-flags": ["-open Belt"],
+  "refmt": 3,
+  "gentypeconfig": {
+    "language": "untyped",
+    "shims": {},
+    "debug": {
+      "all": false,
+      "basic": false
+    }
+  }
+}
