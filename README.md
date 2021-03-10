@@ -1,46 +1,131 @@
-# Getting Started with Create React App
+# workshop-react-rescript-typescript-2021
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+> React, A JavaScript library for building user interfaces
 
-## Available Scripts
+> ReScript is the language for folks who don't necessarily love JavaScript, but who still acknowledge its importance.
 
-In the project directory, you can run:
+> Typed JavaScript at Any Scale. TypeScript extends JavaScript by adding types.
 
-### `yarn start`
+Advance through the branches to learn how to use Typescript and ReScript in a React project.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+#### 1️⃣ [`typescript`](../../tree/typescript)
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+Run:
 
-### `yarn test`
+```shell
+$ git clone https://github.com/LeoLeBras/workshop-react-rescript-typescript-2021.git
+$ yarn
+$ yarn start
+```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+And code!
 
-### `yarn build`
+#### 2️⃣ [`rescript`](../../tree/rescript)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Run:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+```shell
+$ git checkout rescript
+$ yarn
+$ yarn rescript:start
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+And in another tab:
 
-### `yarn eject`
+```shell
+$ yarn react:start
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+Now code!
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+#### 3️⃣ [`typescript-poor-type-inference`](../../tree/typescript-poor-type-inference)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+Run:
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+```shell
+$ git checkout typescript-poor-type-inference
+$ yarn
+$ yarn start
+```
 
-## Learn More
+Now code!
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+#### 4️⃣ [`rescript-powerful-type-inference`](../../tree/rescript-powerful-type-inference)
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Run:
+
+```shell
+$ git checkout rescript-powerful-type-inference
+$ yarn
+$ yarn rescript:start
+```
+
+And in another tab:
+
+```shell
+$ yarn react:start
+```
+
+Now code!
+
+#### 5️⃣ [`typescript-todolist`](../../tree/typescript-todolist)
+
+Run:
+
+```shell
+$ git checkout typescript-todolist
+$ yarn
+$ yarn start
+```
+
+Now code!
+
+#### 6️⃣ [`rescript-todolist`](../../tree/rescript-todolist)
+
+Run:
+
+```shell
+$ git checkout rescript-todolist
+$ yarn
+$ yarn rescript:start
+```
+
+And in another tab:
+
+```shell
+$ yarn react:start
+```
+
+Now code!
+
+#### 7️⃣ [`typescript-graphql`](../../tree/typescript-graphql)
+
+Run:
+
+```shell
+$ git checkout typescript-graphql
+$ # git reset --soft HEAD~1
+$ yarn
+$ yarn start
+```
+
+Now code!
+
+#### 8️⃣ [`rescript-graphql`](../../tree/rescript-graphql)
+
+Run:
+
+```shell
+$ git checkout rescript-graphql
+$ # git reset --soft HEAD~1
+$ yarn
+$ yarn rescript:start
+```
+
+And in another tab:
+
+```shell
+$ yarn react:start
+```
+
+Now code!
