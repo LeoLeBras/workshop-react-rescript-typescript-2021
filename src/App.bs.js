@@ -2,8 +2,10 @@
 'use strict';
 
 var React = require("react");
+var Gretting = require("./Gretting.bs.js");
 
 function App(Props) {
+  console.log(Gretting.make(1, 2));
   return React.createElement("div", undefined, "Silence is golden");
 }
 
