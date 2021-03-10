@@ -2,9 +2,15 @@
 'use strict';
 
 var React = require("react");
+var Apollo = require("./Apollo.bs.js");
+var LaunchesPast = require("./LaunchesPast.bs.js");
+var Client = require("@apollo/client");
 
 function App(Props) {
-  return React.createElement("div", undefined, "Silence is golden");
+  return React.createElement(Client.ApolloProvider, {
+              client: Apollo.client,
+              children: React.createElement(LaunchesPast.make, {})
+            });
 }
 
 var make = App;

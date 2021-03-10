@@ -1,4 +1,6 @@
 @gentype @react.component
 export make = () => {
-  <div> {"Silence is golden"->React.string} </div>
+  <ApolloClient.React.ApolloProvider client=Apollo.client>
+    <LaunchesPast />
+  </ApolloClient.React.ApolloProvider>
 }
