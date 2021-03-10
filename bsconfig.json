@@ -15,8 +15,22 @@
       "in-source": true
     }
   ],
+  "graphql": {
+   "apolloMode": true,
+   "extendMutation": "ApolloClient.GraphQL_PPX.ExtendMutation",
+   "extendQuery": "ApolloClient.GraphQL_PPX.ExtendQuery",
+   "extendSubscription": "ApolloClient.GraphQL_PPX.ExtendSubscription",
+   "templateTagReturnType": "ApolloClient.GraphQL_PPX.templateTagReturnType",
+   "templateTagImport": "gql",
+   "templateTagLocation": "@apollo/client"
+  },
+  "ppx-flags": ["@reasonml-community/graphql-ppx/ppx"],
   "suffix": ".bs.js",
-  "bs-dependencies": ["@rescript/react"],
+  "bs-dependencies": [
+    "rescript-apollo-client",
+    "@reasonml-community/graphql-ppx",
+    "reason-react"
+  ],
   "bs-dev-dependencies": [],
   "bsc-flags": ["-open Belt"],
   "refmt": 3,

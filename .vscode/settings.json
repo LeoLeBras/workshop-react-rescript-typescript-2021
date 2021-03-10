@@ -2,6 +2,9 @@
   "editor.codeActionsOnSave": {
     "source.fixAll.eslint": true
   },
+  "files.exclude": {
+    "**/*.bs*.js": false
+  },
   "typescript.tsdk": "node_modules/typescript/lib",
   "editor.defaultFormatter": "chenglou92.rescript-vscode"
 }
